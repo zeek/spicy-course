@@ -1,0 +1,25 @@
+version: '0.2'
+ignorePaths: []
+dictionaryDefinitions: []
+dictionaries: []
+words:
+- ABABAB
+- Bannier
+- barify
+- bitfield
+- bitfields
+- btest
+- Codespace
+- HILTI
+- inout
+- libpcap
+- packagedir
+- PCAP
+- POSIX
+- spicyc
+- struct
+- structs
+- subparsers
+- Zeek
+ignoreWords: []
+import: []

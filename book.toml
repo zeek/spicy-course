@@ -1,0 +1,33 @@
+[book]
+authors = ["The Zeek developers"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Introduction to Spicy"
+
+[output.html]
+additional-css = ["./src/css/mdbook-admonish.css", "./mdbook-admonish.css"]
+additional-js = ["./src/js/mermaid.min.js", "./src/js/mermaid-init.js"]
+
+[preprocessor.spicy-code]
+command = "python3 scripts/mdbook-spicy-code"
+
+[output.html.code.hidelines]
+spicy = "###"
+ruby = "###"
+
+# [output.linkcheck]
+# follow-web-links = true
+
+# [preprocessor.cmdrun]
+# [preprocessor.svgbob]
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "3.0.0" # do not edit: managed by `mdbook-admonish install`
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+# [preprocessor.plantuml]
+# plantuml-cmd="plantuml"
+# use-data-uris=false
