@@ -3,8 +3,8 @@
 // - Guide on writing highlighters: https://highlightjs.readthedocs.io/en/latest/language-guide.html
 // - possible values for `scope`/`className`: https://highlightjs.readthedocs.io/en/latest/css-classes-reference.html
 
-hljs.registerLanguage("spicy", (hljs) => ({
-  name: "Spicy",
+hljs.registerLanguage('spicy', (hljs) => ({
+  name: 'Spicy',
   keywords: {
     keyword:
       // TODO(bbannier): $$
