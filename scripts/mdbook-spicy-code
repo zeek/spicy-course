@@ -3,7 +3,6 @@
 import json
 import sys
 
-REPLACEMENT_LANG_SPICY = "ruby"
 REPLACEMENT_LANG_ZEEK = "ruby"
 
 
@@ -15,9 +14,7 @@ def set_lang_spicy(data):
     elif isinstance(data, dict):
         for k, v in data.items():
             if k == "content":
-                data[k] = v.replace(
-                    "```spicy\n", f"```{REPLACEMENT_LANG_SPICY}\n"
-                ).replace("```zeek\n", f"```{REPLACEMENT_LANG_ZEEK}\n")
+                data[k] = v.replace("```zeek\n", f"```{REPLACEMENT_LANG_ZEEK}\n")
             elif isinstance(data, dict):
                 set_lang_spicy(v)
 

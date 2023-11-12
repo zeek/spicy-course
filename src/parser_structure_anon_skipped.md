@@ -7,9 +7,7 @@ field](https://docs.zeek.org/projects/spicy/en/latest/programming/parsing.html#a
 additionally can explicitly [skip over input
 data](https://docs.zeek.org/projects/spicy/en/latest/programming/parsing.html#skipping-input).
 
-<!-- NOTE: Disabling highlighting here since when highlighting this as ruby the
-regexp confuses the highlighter. -->
-```plain
+```spicy
 # Parser for a series of digits. When done parsing yields the extracted number.
 type Number = unit {
     n: /[[:digit:]]+/;

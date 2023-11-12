@@ -7,7 +7,8 @@ title = "Introduction to Spicy"
 
 [output.html]
 additional-css = ["./src/css/mdbook-admonish.css", "./mdbook-admonish.css"]
-additional-js = ["./src/js/mermaid.min.js", "./src/js/mermaid-init.js"]
+additional-js = ["./src/js/mermaid.min.js", "./src/js/mermaid-init.js", "./src/js/highlight-spicy.js"]
+edit-url-template = "https://github.com/bbannier/spicy-course/edit/main/{path}"
 
 [preprocessor.spicy-code]
 command = "python3 scripts/mdbook-spicy-code"

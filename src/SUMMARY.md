@@ -3,6 +3,9 @@
 - [Goals of this book](./goals.md)
 - [Why Spicy?](./why_spicy.md)
 - [Prerequisites](./prerequisites.md)
+
+---
+
 - [Spicy language](./language.md)
   - [Hello world](./hello_world.md)
   - [Basic types](./basic_types.md)
@@ -17,6 +20,9 @@
   - [Functions](./functions.md)
     - [Exercises](./functions_exercises.md)
   - [Modules revisited](./modules_revisited.md)
+
+---
+
 - [Parsing](./parsing.md)
   - [Structure of a parser](./parser_structure.md)
     - [Attributes](./parser_structure_attributes.md)
@@ -32,6 +38,9 @@
   <!-- - [TODO: Loosely coupled parsers: sinks & filters]() -->
   <!-- - [TODO: Hooks]() -->
 <!-- - [TODO: Spicy patterns]() -->
+
+---
+
 - [Integrating with Zeek](./zeek_integration.md)
   - [Protocol analyzers](./zeek_protocol_analyzers.md)
     - [Message and connection semantics](./zeek_message_and_connection_semantics.md)
