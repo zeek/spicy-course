@@ -1,6 +1,6 @@
 # Error recovery
 
-Even with a grammar perfectly modelling a specification parsing of real data can
+Even with a grammar perfectly modelling a specification, parsing of real data can
 fail due to e.g.,
 
 - endpoints not conforming to spec, or
@@ -8,7 +8,7 @@ fail due to e.g.,
 
 Instead of altogether aborting parsing we would like to gracefully recover from
 parse errors, i.e., when the parser encounters a parse error we would like skip
-input until when can parse again.
+input until it can parse again.
 
 Spicy includes [support for expressing such
 recovery](https://docs.zeek.org/projects/spicy/en/latest/programming/parsing.html#error-recovery)
@@ -74,7 +74,7 @@ on Message::%done { print self; }
    expect.
    ```
 
-1. What do you see if you pass misspelled input like with the second `A` changed
+1. What do you see if you pass misspelled input, like with the second `A` changed
    to `1`, i.e., the input
 
    ```plain

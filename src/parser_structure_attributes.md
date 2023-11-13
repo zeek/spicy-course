@@ -1,6 +1,6 @@
 # Attributes
 
-Behavior of individual subparsers or units can be controlled with attributes.
+The behavior of individual subparsers or units can be controlled with attributes.
 
 ```spicy
 type Version = unit {

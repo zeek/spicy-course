@@ -13,7 +13,7 @@ level.
 # The 'ByteOrder' type is defined in the built-in Spicy module.
 import spicy;
 
-# Switch default from default network byte order to little for this module.
+# Switch default from network byte order to little-endian for this module.
 %byte-order=spicy::ByteOrder::Little;
 
 # This unit uses big byte order.
@@ -21,7 +21,7 @@ type X = unit {
     # Use default byte order (big).
     a: uint8;
 
-    # Use little byte order for this field.
+    # Use little-endian byte order for this field.
     b: uint8 &byte-order=spicy::ByteOrder::Little;
 } &byte-order=spicy::ByteOrder::Big;
 ```

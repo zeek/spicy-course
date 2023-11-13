@@ -1,6 +1,6 @@
 # User-defined types
 
-Enums and structs are user-defined data types which allow to give data a
+Enums and structs are user-defined data types which allow you to give data
 semantic meaning.
 
 ## Enums

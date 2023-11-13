@@ -61,7 +61,7 @@ $ spicyc -D grammar x.spicy -o /dev/null -p
 [debug/grammar]
 ```
 
-In above debug output the entry point of the grammar is marked `(*)`.
+In the above debug output the entry point of the grammar is marked `(*)`.
 
 - parsing a unit consists of parsing the `anon` field (corresponding to the
   anonymous list), and `x`
@@ -71,11 +71,11 @@ In above debug output the entry point of the grammar is marked `(*)`.
 ## Types for lookahead
 
 In addition to literals, lookahead also works with units which start with a
-literal. Spicy transparently detects such units and will use them as for
+literal. Spicy transparently detects such units and will use them for
 lookahead if possible.
 
 ```admonish example
-Confirm this yourself by wrapping the literal in above unit in its own unit, and
+Confirm this yourself by wrapping the literal in the above unit in its own unit, and
 validating by parsing an input like `AAAAA\x01`. Are there any major differences
 in the generated grammar?
 ```
@@ -83,7 +83,7 @@ in the generated grammar?
 ## Using lookahead for conditional parsing
 
 We have seen previously how we can use unit `switch` for conditional parsing.
-Another instance where conditional parsing can occur when a protocol message
+Another instance of conditional parsing occurs when a protocol message
 holds one of multiple possible sub-messages (a *union*). The sub-messages often
 contain a tag to denote what kind of sub-message is transmitted.
 
@@ -134,5 +134,5 @@ type Message2 = unit {
 ```
 
 ```admonish example
-Do the generated grammars for above two ways to express the protocol differ?
+Do the generated grammars for the above two ways to express the protocol differ?
 ```

@@ -1,6 +1,6 @@
 # Forwarding to other analyzers
 
-One often wants to forward an extracted payloads to other analyzers.
+One often wants to forward an extracted payload to other analyzers.
 
 - HTTP messages with files
 - compressed files containing PE files
@@ -26,7 +26,7 @@ type Message = unit {
 By using the `&chunked` attribute on the `bytes` its field hook is invoked soon as a chunk of data
 arrives, even if the full data is not yet available.
 The caveat is that only the final chunk will be stored parsing is done. This is
-fine since we use do not store the data.
+fine since we usually do not store the data.
 
 The protocol for passing data is:
 
