@@ -2,14 +2,14 @@
 
 The [`bytes`
 type](https://docs.zeek.org/projects/spicy/en/latest/programming/language/types.html#bytes)
-represents raw bytes, typically from protocol data. Literal for `bytes` are
+represents raw bytes, typically from protocol data. Literals for `bytes` are
 written with prefix `b`, e.g., `b"\x00byteData\x01"`.
 
 The [`string`
 type](https://docs.zeek.org/projects/spicy/en/latest/programming/language/types.html#string)
 represents text in a given character set.
 
-Conversion between `bytes` and `string` always explicit with [`bytes`'
+Conversion between `bytes` and `string` are always explicit, via [`bytes`'
 `decode`
 method](https://docs.zeek.org/projects/spicy/en/latest/programming/language/types.html#method-bytes::decode)
 or [`string`'s

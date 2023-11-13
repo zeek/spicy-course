@@ -40,8 +40,8 @@ type Request = unit {
 };
 ```
 
-- length of the list of messages is unspecified so it is detected dynamically
-- to avoid storing a unbounded list of messages we use an [anonymous
+- the length of the list of messages is unspecified so it is detected dynamically
+- to avoid storing an unbounded list of messages we use an [anonymous
   field](https://docs.zeek.org/projects/spicy/en/latest/programming/parsing.html#anonymous-fields)
   for the list
 - parsing of the protocol messages is responsible for detecting when a message

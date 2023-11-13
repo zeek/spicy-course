@@ -5,7 +5,7 @@ In Zeek's model all eligible analyzers would see the traffic.
 - If analyzers detect traffic not matching their protocol, they should signal
   Zeek an analyzer violation so they stop receiving data. This is not an error
   during protocol detection.
-- To signal matching traffic analyzers should signal Zeek an analyzer
+- To signal matching traffic, analyzers should signal Zeek an analyzer
   confirmation. This e.g., leads to associating the protocol/service with the
   connection.
 

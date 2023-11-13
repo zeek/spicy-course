@@ -23,12 +23,12 @@ if (x > 100) {
 ```
 
 ```admonish hint
-Surrounding bodys with `{..}` is optional, but often makes code easier to follow.
+Surrounding bodies with `{..}` is optional, but often makes code easier to follow.
 ```
 
 ### `switch`
 
-To match a value against a list of possible options [`switch`
+To match a value against a list of possible options the [`switch`
 statement](https://docs.zeek.org/projects/spicy/en/latest/programming/language/statements.html#switch)
 can be used.
 

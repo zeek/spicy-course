@@ -3,7 +3,7 @@
 ## Tuples
 
 [Tuples](https://docs.zeek.org/projects/spicy/en/latest/programming/language/types.html#tuple)
-are heterogenous collections of values. Tuple values are immutable.
+are heterogeneous collections of values. Tuple values are immutable.
 
 ```spicy
 global xs = (1, "a", b"c");
@@ -68,7 +68,7 @@ for (x in map("a": 1, "b": 2, "c": 1)) {
 }
 ```
 
-Indexing into collections and iterators are checked at runtime.
+Indexing into collections and iterators is checked at runtime.
 
 Use `|..|` like in Zeek to obtain the number of elements in a collection, e.g.,
 

@@ -1,8 +1,8 @@
 # Zeek integration
 
 [Zeek](https://zeek.org/) supports writing packet, protocol or file analyzers
-with Spicy. In addition to allowing inclusion of unmodified Spicy grammars among
-other the following is provided:
+with Spicy. In addition to allowing inclusion of unmodified Spicy grammars,
+additional features include:
 
 - [automatic
   generation](https://docs.zeek.org/en/master/devel/spicy/reference.html#interface-definitions-evt-files)
