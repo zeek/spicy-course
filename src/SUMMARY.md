@@ -47,6 +47,7 @@
     - [Analyzer lifecycle](./zeek_analyzer_lifecycle.md)
     - [Passing data to Zeek](./zeek_passing_data.md)
     - [Forwarding to other analyzers](./zeek_forwarding_data.md)
+    - [Sharing data across the same connection](./zeek_sharing_data_same_connection.md)
   - [Exercises](./zeek_protocol_analyzer_exercises.md)
 <!-- - [TODO: Debugging and profiling]() -->
 
