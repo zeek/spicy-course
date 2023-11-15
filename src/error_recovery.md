@@ -148,7 +148,7 @@ on Message::%done { print self; }
 
 1. Add a single `&synchronized` attribute to the grammar so you can handle all
    possible misspellings. Also add a `%synced` hook to confirm the
-   synchronization result (on which unit). Can you parse inputs like
+   synchronization result (on which unit?). Can you parse inputs like these?
 
    ```plain
    ABABAB
@@ -159,7 +159,7 @@ on Message::%done { print self; }
    You can enable the `spicy-verbose` debug stream to show parsing progress.
 
    ```console
-   echo AB1BAB | HILTI_DEBUG=spicy-verbose spicy-driver -d foo.spicy
+   printf AB1BAB | HILTI_DEBUG=spicy-verbose spicy-driver -d foo.spicy
    ```
 
    <details>

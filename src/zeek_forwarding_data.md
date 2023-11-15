@@ -40,7 +40,7 @@ E.g.,
 import zeek;
 
 public type File = unit {
-    var fh: string;
+    var h: string;
 
     on %init { self.h = zeek::file_begin(); }
 

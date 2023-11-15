@@ -43,7 +43,7 @@ Starting from the default protocol analyzer template we want to (redundantly) pa
    </details>
 
 1. Fix the signatures of the handlers for `Foo::request` so tests pass. What
-   type do need to use on the Zeek side to pass then length (`uint64` in Spicy)?
+   type do need to use on the Zeek side to pass the length (`uint64` in Spicy)?
 
    <details>
    <summary>Hint</summary>
@@ -70,7 +70,7 @@ Starting from the default protocol analyzer template we want to (redundantly) pa
    print fmt("Testing Foo: [request] %s %s %d", c$id, payload, len);
    ```
 
-   Rerun tests and update with the test baseline with
+   Rerun tests and update the test baseline with
 
    ```console
    cd testing/

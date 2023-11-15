@@ -12,7 +12,7 @@ global N2: uint8 = 0; # Explicitly typed.
 
 # Types required in signatures, here: `uint64` -> `void`
 function foo(arg: int64) {
-    local dec = -1; # Inferred as int64.
+    local inc = -1; # Inferred as int64.
     print arg + inc;
 }
 ```

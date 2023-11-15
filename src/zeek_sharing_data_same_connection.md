@@ -61,7 +61,7 @@ type Reply = unit {
     %context = Context;
     # ...
 
-    on %done { print "Saw reply %s to %s request" % (code, method); }
+    on %done { print "Saw reply %s to %s request" % (code, self.context().method); }
 };
 ```
 

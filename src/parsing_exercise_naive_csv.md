@@ -21,7 +21,7 @@ input from a file instead of stdin, e.g.,
 spicy-driver csv_naive.spicy -f input.csv
 ```
 
-1. Write a parser which extracts the bytes on each rows into a list.
+1. Write a parser which extracts the bytes on each row into a list.
 
    <details>
     <summary>Hint 1</summary>

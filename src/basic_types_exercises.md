@@ -10,7 +10,7 @@
    print x - 1;
 
    global y: uint8 = 255;
-   print x + 1;
+   print y + 1;
 
    global z = 1024;
    print cast<uint8>(z);

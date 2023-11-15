@@ -27,6 +27,8 @@ global const C = 42;
 # file: bar.spicy
 module bar;
 
+import foo;
+
 print foo::A, foo::B;
 
 # Rejected: 'foo::C' has not been declared public
