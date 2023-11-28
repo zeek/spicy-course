@@ -20,6 +20,10 @@ edit-url-template = "https://github.com/bbannier/spicy-course/edit/main/{path}"
 spicy = "###"
 ruby = "###"
 
+[output.html.fold]
+enable = true
+level = 0
+
 # [output.linkcheck]
 # follow-web-links = true
 
