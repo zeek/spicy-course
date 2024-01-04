@@ -1,0 +1,24 @@
+name: Build
+
+on:
+  # This is a resusable workflow intended to be called by other jobs.
+  workflow_call:
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install dependencies
+      run: |
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+        source "$HOME/.cargo/env"
+        curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.sh | bash
+        cargo binstall -y mdbook mdbook-admonish mdbook-linkcheck mdbook-mermaid
+    - name: Build with mdBook
+      run: mdbook build
+    - uses: actions/upload-artifact@v4
+      with:
+        name: spicy-course
+        path: ./book
