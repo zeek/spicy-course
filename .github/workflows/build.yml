@@ -1,8 +1,8 @@
 name: Build
 
 on:
-  # This is a resusable workflow intended to be called by other jobs.
-  workflow_call:
+  workflow_call: # This is a resusable workflow intended to be called by other jobs.
+  pull_request:
 
 jobs:
   # Build job
