@@ -1,6 +1,6 @@
 # Summary
 
-- [Goals of this book](./goals.md)
+- [Goals of this course](./goals.md)
 - [Why Spicy?](./why_spicy.md)
 - [Prerequisites](./prerequisites.md)
 
