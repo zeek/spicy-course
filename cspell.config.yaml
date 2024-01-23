@@ -13,6 +13,7 @@ words:
 - HILTI
 - inout
 - libpcap
+- mdbook
 - packagedir
 - PCAP
 - POSIX
