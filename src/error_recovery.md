@@ -94,7 +94,7 @@ on Message::%done { print self; }
    We first the result of parsing for the first `Message` from `AB`, and
    encounter an error for the second element.
 
-   The error corresponds to parsing the list inside `Messages`. The grammar
+   The error corresponds to parsing the vector inside `Messages`. The grammar
    expects either `A` to start a new `Message`, or end of data to signal the end of
    the input; `1` matches neither so lookahead parsing fails.
    </details>
@@ -115,7 +115,7 @@ on Message::%done { print self; }
       ```
 
    b. Synchronize on `Message::a` in the _next message_, i.e., abandon parsing
-      the remaining fields in `Message` and start over. For that we would synchronize on the list elements in `Messages`,
+      the remaining fields in `Message` and start over. For that we would synchronize on the vector elements in `Messages`,
 
       ```spicy
       : (Message &synchronize)[];
@@ -135,12 +135,12 @@ on Message::%done { print self; }
 
    - If we synchronize on `Message::b` it would seem that we should be able to recover at its data.
 
-     This however does not work since the list uses lookahead parsing, so we
+     This however does not work since the vector uses lookahead parsing, so we
      would fail already in `Messages` before we could recover in `Message`.
 
-   - We need to synchronize on the next list element.
+   - We need to synchronize on the next vector element.
 
-     In larger units synchronizing high up (e.g., on a list in the top-level
+     In larger units synchronizing high up (e.g., on a vector in the top-level
      unit) allows recovering from more general errors at the cost of not
      extracting some data, e.g., we would be able to also handle misspelled `B`s
      in this example.
