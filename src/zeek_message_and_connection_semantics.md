@@ -27,7 +27,7 @@ of _all data_ differ between TCP and UDP parsers:
   connection are modelled as streams with reassembled data; `&eod` means _until
   the end of the stream_. The stream is _unbounded_.
 
-For this reason one usually wants to model parsing of a TCP connection as a list of
+For this reason one usually wants to model parsing of a TCP connection as a vector of
 protocol messages, e.g.,
 
 ```spicy
@@ -40,9 +40,9 @@ type Request = unit {
 };
 ```
 
-- the length of the list of messages is unspecified so it is detected dynamically
-- to avoid storing an unbounded list of messages we use an [anonymous
+- the length of the vector of messages is unspecified so it is detected dynamically
+- to avoid storing an unbounded vector of messages we use an [anonymous
   field](https://docs.zeek.org/projects/spicy/en/latest/programming/parsing.html#anonymous-fields)
-  for the list
+  for the vector
 - parsing of the protocol messages is responsible for detecting when a message
   ends

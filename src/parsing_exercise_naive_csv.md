@@ -21,12 +21,12 @@ input from a file instead of stdin, e.g.,
 spicy-driver csv_naive.spicy -f input.csv
 ```
 
-1. Write a parser which extracts the bytes on each row into a list.
+1. Write a parser which extracts the bytes on each row into a vector.
 
    <details>
     <summary>Hint 1</summary>
 
-    You top-level parser should contain a list of rows which has unspecified length.
+    You top-level parser should contain a vector of rows which has unspecified length.
    </details>
 
    <details>
@@ -106,7 +106,7 @@ spicy-driver csv_naive.spicy -f input.csv
     }
     ```
 
-    Since `rows` is a list of units you still need to massage its data though ...
+    Since `rows` is a vector of units you still need to massage its data though ...
    </details>
 
    <details>

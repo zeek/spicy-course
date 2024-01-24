@@ -5,10 +5,10 @@ parsing](https://docs.zeek.org/projects/spicy/en/latest/programming/parsing.html
 is a core Spicy concept. Leveraging lookahead makes it possible to build concise
 grammars which remain comprehensible and maintainable as the grammar grows.
 
-## Deep dive: Parsing of lists of unknown size
+## Deep dive: Parsing of vector of unknown size
 
 We have already seen how we can use lookahead parsing to dynamically detect the
-length of a list.
+length of a vector.
 
 ```spicy
 type X = unit {
@@ -64,8 +64,8 @@ $ spicyc -D grammar x.spicy -o /dev/null -p
 In above debug output the entry point of the grammar is marked `(*)`.
 
 - parsing a unit consists of parsing the `anon` field (corresponding to the
-  anonymous list), and `x`
-- to parse the list lookahead is used.
+  anonymous vector), and `x`
+- to parse the vector lookahead is used.
 - lookahead inspects a `uint8` (as epsilon) or literal `b"A"`
 
 ## Types for lookahead
