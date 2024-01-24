@@ -35,6 +35,15 @@ jobs:
         aws-region: us-east-1
     - name: Upload
       run: |
-        aws s3 sync spicy-course s3://static.zeek.org/spicy-course
+        # Upload the generate docs and delete removed files.
+        aws s3 sync spicy-course s3://static.zeek.org/spicy-course --delete
+
+        # Add a top-level object `spicy-course/` which could be reached from
+        # `https://static.zeek.org/spicy-course`, i.e., without having to
+        # explicitly name `index.html`.
+        #
+        # TODO(bbannier): This is currently broken for unclear reasons.
         aws s3 cp spicy-course/index.html s3://static.zeek.org/spicy-course/
+
+        # Invalidate cloudfront so the changes become reachable immediately.
         aws cloudfront create-invalidation --distribution-id ${{ secrets.STATIC_ZEEK_ORG_CLOUDFRONT_DISTRIBUTION }} --paths "/spicy-course/*"
