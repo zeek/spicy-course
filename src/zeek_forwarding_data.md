@@ -25,7 +25,7 @@ type Message = unit {
 
 By using the `&chunked` attribute on the `bytes` its field hook is invoked soon as a chunk of data
 arrives, even if the full data is not yet available.
-The caveat is that only the final chunk will be stored parsing is done. This is
+The caveat is that only the final chunk will be stored once parsing is done. This is
 fine since we usually do not store the data.
 
 The protocol for passing data is:
@@ -75,7 +75,7 @@ function zeek::protocol_handle_get_or_create(analyzer: string) : ProtocolHandle;
 ```
 
 When using `zeek::protocol_begin` without argument all forwarded data will be
-pass to Zeek's dynamic protocol detection (DPD).
+passed to Zeek's dynamic protocol detection (DPD).
 
 Otherwise use the Zeek name of the analyzer, e.g.,
 
