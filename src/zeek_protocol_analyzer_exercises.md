@@ -77,7 +77,7 @@ Starting from the default protocol analyzer template we want to (redundantly) pa
    btest -u
    ```
 
-   Make sure all tests with these changes.
+   Make sure all tests pass with these changes.
 
    Stage and commit all changes in the package repository.
 
