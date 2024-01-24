@@ -37,4 +37,4 @@ jobs:
       run: |
         aws s3 sync spicy-course s3://static.zeek.org/spicy-course
         aws s3 cp spicy-course/index.html s3://static.zeek.org/spicy-course/
-        aws s3 cp spicy-course/index.html s3://static.zeek.org/spicy-course
+        aws cloudfront create-invalidation --distribution-id ${{ secrets.STATIC_ZEEK_ORG_CLOUDFRONT_DISTRIBUTION }} --paths "/spicy-course/*"
