@@ -14,7 +14,7 @@ additional-js = [
         "./src/js/mermaid-init.js",
         "./src/js/mermaid.min.js",
 ]
-edit-url-template = "https://github.com/bbannier/spicy-course/edit/main/{path}"
+edit-url-template = "https://github.com/zeek/spicy-course/edit/main/{path}"
 
 [output.html.code.hidelines]
 spicy = "###"
