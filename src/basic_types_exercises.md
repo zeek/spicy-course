@@ -31,10 +31,10 @@
 1. What happens at runtime if you try to get a non-existing `vector` element, e.g.,
 
    ```spicy
-   print vector(1,2,3)[4711];
+   print vector(1, 2, 3)[4711];
    ```
 
-1. What happens at runtime if you try to dereference at invalidated iterator, e.g.,
+1. What happens at runtime if you try to dereference an invalidated iterator, e.g.,
 
    ```spicy
    global xs = vector(1);
