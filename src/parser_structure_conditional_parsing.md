@@ -9,7 +9,7 @@ met](https://docs.zeek.org/projects/spicy/en/latest/programming/parsing.html#con
 
 ```spicy
 type Integer = unit {
-    width: uint8 &requires=($$ != 0 && $$ < 8);
+    width: uint8 &requires=($$ != 0 && $$ < 4);
     u8 : uint8  if (self.width == 1);
     u16: uint16 if (self.width == 2);
     u32: uint32 if (self.width == 3);
@@ -22,7 +22,7 @@ statement](https://docs.zeek.org/projects/spicy/en/latest/programming/parsing.ht
 
 ```spicy
 type Integer = unit {
-    width: uint8 &requires=($$ != 0 && $$ < 8);
+    width: uint8 &requires=($$ != 0 && $$ < 4);
     switch (self.width) {
         1 -> u8: uint8;
         2 -> u16: uint16;
