@@ -16,16 +16,18 @@ Starting from the default protocol analyzer template we want to (redundantly) pa
 
 1. Manually build your changed analyzer:
 
-    ```console
+    ```sh
+    # Inside the directory of your generated analyzer (the directory with `zkg.meta`).
     mkdir build
     cd build/
     cmake ..
     make
     ```
 
-1. Execute the test suite. This runs tests against an included PCAP file. What do you see?
+1. Run the test suite. This runs tests against an included PCAP file. What do you see?
 
-   ```console
+   ```sh
+   # Inside the directory of your generated analyzer (the directory with `zkg.meta`).
    cd testing/
    btest -dv
    ```
@@ -72,7 +74,8 @@ Starting from the default protocol analyzer template we want to (redundantly) pa
 
    Rerun tests and update the test baseline with
 
-   ```console
+   ```sh
+   # Inside the directory of your generated analyzer (the directory with `zkg.meta`).
    cd testing/
    btest -u
    ```
@@ -81,16 +84,22 @@ Starting from the default protocol analyzer template we want to (redundantly) pa
 
    Stage and commit all changes in the package repository.
 
-   ```console
+   ```sh
    git add -u
    git commit -v -m "Pass payload length to Zeek"
    ```
 
-   Validate that the package also tests fine with `zkg`. This will require no
-   uncommitted changes or untracked files in the repository.
+   Validate that the package also tests fine with `zkg`.
 
-   ```console
-   # Make progress more verbose.
+   ```admonish note
+   In contrast to the explicit invocations above, `zkg` only operates on files
+   committed to the Git repository. It additionally requires that there are no
+   uncommitted changes or untracked files in the repository.
+   ```
+
+   ```sh
+   # Inside the directory of your generated analyzer (the directory with `zkg.meta`).
+   # Make progress more verbose with `-vvv`.
    zkg -vvv test .
    ```
 
