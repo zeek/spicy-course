@@ -41,3 +41,9 @@ This makes certain optimizations inapplicable (e.g., dead code removal).
 
 Only declare something `public` if you intend it to be used by other modules.
 ```
+
+```admonish note
+With spicy-1.11 (shipping with zeek-7) the rules around `public` are much more
+relaxed and `public` even closer maps onto "exposed C++ API". Above example use
+of a non-`public` `const` would be accepted.
+```
