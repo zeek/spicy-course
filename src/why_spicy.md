@@ -24,7 +24,8 @@ Spicy](https://docs.zeek.org/projects/spicy/en/latest/tutorial/index.html) as
 
 ```spicy
 type Error = unit {
-    code: uint16;
+    op_code: uint16;
+    error_code: uint16;
     msg:  bytes &until=b"\x00";
 };
 ```
