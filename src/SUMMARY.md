@@ -54,3 +54,7 @@
 <!-- - [TODO: Debugging and profiling]() -->
 
     <!-- TODO: type aliases -->
+
+---
+
+- [Resources](./resources.md)
