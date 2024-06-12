@@ -24,6 +24,13 @@ Starting from the default protocol analyzer template we want to (redundantly) pa
     make
     ```
 
+    ```admonish note
+
+    The `build/` directory will contain generated files, some of them specific
+    to the developer environment, and it **should not be committed** to the
+    repository.
+    ```
+
 1. Run the test suite. This runs tests against an included PCAP file. What do you see?
 
    ```sh
