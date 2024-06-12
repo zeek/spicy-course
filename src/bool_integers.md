@@ -15,7 +15,7 @@ if (C)
 ## Integers
 
 Spicy supports both signed and unsigned integers with widths of 8, 16, 32 and
-64 bytes:
+64 bits:
 
 - `uint8`, `uint16`, `uint32`, `uint64`
 - `int8`, `int16`, `int32`, `int64`
