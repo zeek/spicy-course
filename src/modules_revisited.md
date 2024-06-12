@@ -20,7 +20,7 @@ module foo;
 
 public global A = 47;
 public const B = 11;
-global const C = 42;
+const C = 42;
 ```
 
 ```spicy
