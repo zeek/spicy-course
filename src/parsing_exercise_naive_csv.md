@@ -9,9 +9,9 @@ Assuming the following simplified CSV format:
 A sample input would be
 
 ```csv
-1,a,ABC
-2,b,DEF
-3,c,GHI
+I,a,ABC
+J,b,DEF
+K,c,GHI
 ```
 
 ```admonish note
@@ -98,7 +98,7 @@ spicy-driver csv_naive.spicy -f input.csv
 
    ```console
    $ spicy-driver csv_naive.spicy -f input.csv
-   [[b"1", b"a", b"ABC"], [b"2", b"b", b"DEF"], [b"3", b"c", b"GHI"]]
+   [[b"I", b"a", b"ABC"], [b"J", b"b", b"DEF"], [b"K", b"c", b"GHI"]]
    ```
 
    <details>
