@@ -14,6 +14,12 @@ A sample input would be
 3,c,GHI
 ```
 
+```admonish note
+When copying above data into a file, make sure it ends in a single newline. If
+you use the _copy to clipboard_ button (upper right in snippet) the data should
+be copied correctly.
+```
+
 For testing you can use the `-f` flag to `spicy-dump` or `spicy-driver` to read
 input from a file instead of stdin, e.g.,
 
