@@ -36,7 +36,6 @@
   - [Lookahead parsing](./parsing_lookahead.md)
   - [Error recovery](./error_recovery.md)
   <!-- - [TODO: Loosely coupled parsers: sinks & filters]() -->
-  <!-- - [TODO: Hooks]() -->
 <!-- - [TODO: Spicy patterns]() -->
 
 #
