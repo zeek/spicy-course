@@ -2,7 +2,7 @@
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.6.0
+  rev: v5.0.0
   hooks:
   - id: trailing-whitespace
   - id: end-of-file-fixer
@@ -16,24 +16,24 @@ repos:
     types: [json]
 
 - repo: https://github.com/igorshubovych/markdownlint-cli
-  rev: v0.41.0
+  rev: v0.43.0
   hooks:
   # - id: markdownlint
   - id: markdownlint-fix
 
 - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-  rev: v2.13.0
+  rev: v2.14.0
   hooks:
   - id: pretty-format-yaml
     args: [--autofix, --indent, '2']
 
 - repo: https://github.com/crate-ci/typos
-  rev: v1.22.0
+  rev: v1.29.4
   hooks:
   - id: typos
 
 - repo: https://github.com/streetsidesoftware/cspell-cli
-  rev: v8.8.2
+  rev: v8.17.1
   hooks:
   - id: cspell
     types: [markdown]
