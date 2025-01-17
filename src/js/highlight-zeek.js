@@ -10,6 +10,10 @@ hljs.registerLanguage('zeek', () => ({
   contains: [
     hljs.HASH_COMMENT_MODE,
     hljs.QUOTE_STRING_MODE,
+    {
+      className: 'meta',
+      begin: /@/
+    },
   ],
 }));
 

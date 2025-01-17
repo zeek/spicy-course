@@ -1,6 +1,7 @@
 # Summary
 
-- [Goals of this course](./goals.md)
+[Goals of this course](./goals.md)
+
 - [Why Spicy?](./why_spicy.md)
 - [Prerequisites](./prerequisites.md)
 
@@ -50,7 +51,17 @@
     - [Forwarding to other analyzers](./zeek_forwarding_data.md)
     - [Sharing data across the same connection](./zeek_sharing_data_same_connection.md)
   - [Exercises](./zeek_protocol_analyzer_exercises.md)
-<!-- - [TODO: Debugging and profiling]() -->
+
+---
+
+- [Testing](./testing.md)
+
+- [Day-2 parser operation](./day2_parser_operations.md)
+  - [Debugging](./debugging.md)
+    - [Logging basic parser operation](./debugging_basic_operation.md)
+    - [Exercise: Input not matching parser grammar](./debugging_unsupported_data.md)
+  <!-- TODO: -->
+  <!-- - [Profiling]() -->
 
     <!-- TODO: type aliases -->
 
