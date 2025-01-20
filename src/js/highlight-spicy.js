@@ -29,10 +29,6 @@ hljs.registerLanguage('spicy', (hljs) => ({
 
   },
   contains: [
-    hljs.QUOTE_STRING_MODE,
-    hljs.C_NUMBER_MODE,
-    hljs.HASH_COMMENT_MODE,
-    hljs.REGEXP_MODE,
     {
       // Properties & hooks.
       className: 'meta',
@@ -44,7 +40,14 @@ hljs.registerLanguage('spicy', (hljs) => ({
     }, {
       className: 'operator',
       begin: hljs.RE_STARTERS_RE,
-    }, 
+    }, {
+      className: 'literal',
+      begin: /\d+\/(tcp|udp|icmp)/,
+    },
+    hljs.QUOTE_STRING_MODE,
+    hljs.C_NUMBER_MODE,
+    hljs.HASH_COMMENT_MODE,
+    hljs.REGEXP_MODE,
   ]
 }));
 
