@@ -1,11 +1,11 @@
 hljs.registerLanguage('evt', () => ({
   name: "evt",
   keywords: {
-    keyword: 'protocol packet file analyzer over TCP UDP '
-      + 'originator responder '
-      + 'with '
-      + 'on if event',
-    built_in: 'parse with port',
+    keyword: 'protocol packet file analyzer over TCP UDP'
+      + ' originator responder'
+      + ' with'
+      + ' on if event'
+      + ' parse with port'
   },
   contains: [
     hljs.HASH_COMMENT_MODE,
