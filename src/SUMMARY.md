@@ -60,8 +60,9 @@
   - [Debugging](./debugging.md)
     - [Logging basic parser operation](./debugging_basic_operation.md)
     - [Exercise: Input not matching parser grammar](./debugging_unsupported_data.md)
-  <!-- TODO: -->
-  <!-- - [Profiling]() -->
+  - [Profiling](./profiling.md)
+    - [High-level profiling](./profiling_highlevel.md)
+    - [Low-level profiling](./profiling_lowlevel.md)
 
     <!-- TODO: type aliases -->
 
