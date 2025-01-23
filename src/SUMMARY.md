@@ -56,6 +56,7 @@
 
 - [Testing](./testing.md)
   - [Parser unit testing](./testing_parser_unit_testing.md)
+  - [Testing parsers with shared state](./testing_parsers_with_shared_state.md)
 
 - [Day-2 parser operation](./day2_parser_operations.md)
   - [Debugging](./debugging.md)

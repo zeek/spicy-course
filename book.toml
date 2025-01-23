@@ -10,6 +10,7 @@ additional-css = ["./src/css/mdbook-admonish.css", "./mdbook-admonish.css"]
 additional-js = [
         "./src/js/highlight-evt.js",
         "./src/js/highlight-spicy.js",
+        "./src/js/highlight-spicy_batch.js",
         "./src/js/highlight-zeek.js",
         "./src/js/mermaid-init.js",
         "./src/js/mermaid.min.js",

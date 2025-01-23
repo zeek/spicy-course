@@ -8,8 +8,13 @@ import: []
 words:
 
 - -DSPICYZ
+- aaccept
 - ababab
 - acked
+- acontent
+- adate
+- aetag
+- alast
 - bannier
 - barify
 - bbannier
@@ -40,6 +45,7 @@ words:
 - posix
 - quic
 - rbdum
+- redef
 - rgkg
 - samply
 - siem
