@@ -55,6 +55,7 @@
 ---
 
 - [Testing](./testing.md)
+  - [Parser unit testing](./testing_parser_unit_testing.md)
 
 - [Day-2 parser operation](./day2_parser_operations.md)
   - [Debugging](./debugging.md)
