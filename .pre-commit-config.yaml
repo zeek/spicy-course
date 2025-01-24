@@ -43,4 +43,4 @@ repos:
   hooks:
   - id: actionlint
 
-exclude: src\/[css|js]
+exclude: src/(css|js)/(mermaid|mdbook).*
