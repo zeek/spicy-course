@@ -24,7 +24,7 @@ spicy = "###"
 ruby = "###"
 
 [output.html.fold]
-enable = true
+enable = false
 level = 0
 
 # [output.linkcheck]
