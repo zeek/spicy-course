@@ -16,6 +16,7 @@ additional-js = [
         "./src/js/mermaid.min.js",
 ]
 edit-url-template = "https://github.com/zeek/spicy-course/edit/main/{path}"
+no-section-label = true
 
 [output.html.code.hidelines]
 spicy = "###"
