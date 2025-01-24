@@ -8,6 +8,7 @@ title = "Introduction to Spicy"
 [output.html]
 additional-css = ["./src/css/mdbook-admonish.css", "./mdbook-admonish.css"]
 additional-js = [
+        "./src/js/solutions.js",
         "./src/js/highlight-evt.js",
         "./src/js/highlight-spicy.js",
         "./src/js/highlight-spicy_batch.js",
