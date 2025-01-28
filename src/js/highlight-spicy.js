@@ -7,7 +7,6 @@ hljs.registerLanguage('spicy', (hljs) => ({
   name: 'Spicy',
   keywords: {
     keyword:
-      // TODO(bbannier): $$
       'public self module import function '
       + 'global local const var return on break stop throw skip inout \\$\\$ '
       + 'while break continue '
@@ -29,10 +28,6 @@ hljs.registerLanguage('spicy', (hljs) => ({
 
   },
   contains: [
-    hljs.QUOTE_STRING_MODE,
-    hljs.C_NUMBER_MODE,
-    hljs.HASH_COMMENT_MODE,
-    hljs.REGEXP_MODE,
     {
       // Properties & hooks.
       className: 'meta',
@@ -40,11 +35,22 @@ hljs.registerLanguage('spicy', (hljs) => ({
     }, {
       // Attributes.
       className: 'meta',
-      begin: /&\w+[-|\w]*/
+      begin: /&\w+[-|\w]*/,
     }, {
+      className: 'meta',
+      begin: /\$\$/,
+    },
+    {
       className: 'operator',
       begin: hljs.RE_STARTERS_RE,
-    }, 
+    }, {
+      className: 'literal',
+      begin: /\d+\/(tcp|udp|icmp)/,
+    },
+    hljs.QUOTE_STRING_MODE,
+    hljs.C_NUMBER_MODE,
+    hljs.HASH_COMMENT_MODE,
+    hljs.REGEXP_MODE,
   ]
 }));
 

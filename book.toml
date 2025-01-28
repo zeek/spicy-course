@@ -8,20 +8,23 @@ title = "Introduction to Spicy"
 [output.html]
 additional-css = ["./src/css/mdbook-admonish.css", "./mdbook-admonish.css"]
 additional-js = [
+        "./src/js/solutions.js",
         "./src/js/highlight-evt.js",
         "./src/js/highlight-spicy.js",
+        "./src/js/highlight-spicy_batch.js",
         "./src/js/highlight-zeek.js",
         "./src/js/mermaid-init.js",
         "./src/js/mermaid.min.js",
 ]
 edit-url-template = "https://github.com/zeek/spicy-course/edit/main/{path}"
+no-section-label = true
 
 [output.html.code.hidelines]
 spicy = "###"
 ruby = "###"
 
 [output.html.fold]
-enable = true
+enable = false
 level = 0
 
 # [output.linkcheck]
@@ -31,7 +34,7 @@ level = 0
 # [preprocessor.svgbob]
 [preprocessor.admonish]
 command = "mdbook-admonish"
-assets_version = "3.0.0" # do not edit: managed by `mdbook-admonish install`
+assets_version = "3.0.2" # do not edit: managed by `mdbook-admonish install`
 
 [preprocessor.mermaid]
 command = "mdbook-mermaid"

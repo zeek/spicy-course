@@ -1,8 +1,11 @@
 # Summary
 
-- [Goals of this course](./goals.md)
+[Goals of this course](./goals.md)
+
 - [Why Spicy?](./why_spicy.md)
 - [Prerequisites](./prerequisites.md)
+
+---
 
 - [Spicy language](./language.md)
   - [Hello world](./hello_world.md)
@@ -36,7 +39,6 @@
   - [Lookahead parsing](./parsing_lookahead.md)
   - [Error recovery](./error_recovery.md)
   <!-- - [TODO: Loosely coupled parsers: sinks & filters]() -->
-  <!-- - [TODO: Hooks]() -->
 <!-- - [TODO: Spicy patterns]() -->
 
 #
@@ -51,7 +53,20 @@
     - [Forwarding to other analyzers](./zeek_forwarding_data.md)
     - [Sharing data across the same connection](./zeek_sharing_data_same_connection.md)
   - [Exercises](./zeek_protocol_analyzer_exercises.md)
-<!-- - [TODO: Debugging and profiling]() -->
+
+---
+
+- [Testing](./testing.md)
+  - [Parser unit testing](./testing_parser_unit_testing.md)
+  - [Testing parsers with shared state](./testing_parsers_with_shared_state.md)
+
+- [Day-2 parser operation](./day2_parser_operations.md)
+  - [Debugging](./debugging.md)
+    - [Logging basic parser operation](./debugging_basic_operation.md)
+    - [Exercise: Input not matching parser grammar](./debugging_unsupported_data.md)
+  - [Profiling](./profiling.md)
+    - [High-level profiling](./profiling_highlevel.md)
+    - [Low-level profiling](./profiling_lowlevel.md)
 
     <!-- TODO: type aliases -->
 

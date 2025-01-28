@@ -7,5 +7,8 @@ build: docker.json
 	)
 	@rm docker.json
 
+start: build
+	python3 -m http.server --directory $$PWD/book
+
 docker.json: Dockerfile
 	docker build --metadata-file docker.json .

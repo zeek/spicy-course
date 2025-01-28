@@ -25,3 +25,25 @@ environment integrated with [Visual Studio
 Code](https://code.visualstudio.com). Either clone the project and open it
 locally in Visual Studio Code and install the recommended plugins, or open it
 directly in a Github Codespace from the Github repository view.
+
+## A note on exercise hints and solutions
+
+We include hints or solutions for many exercises. By default they are
+displayed, but in collapsed form.
+
+```admonish example
+<details>
+<summary>Hint</summary>
+
+A hint
+</details>
+
+<details>
+<summary>Solution</summary>
+
+A solution
+</details>
+```
+
+If you would prefer even less temptation they can be toggled completely by
+pressing <kbd>F10</kbd> (try it now).
