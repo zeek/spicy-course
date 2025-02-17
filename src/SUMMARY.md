@@ -72,4 +72,11 @@
 
 ---
 
+- [Project: IRC](./irc.md)
+  - [Collect data for channel membership analysis](./irc_channel_membership.md)
+  - [Zeek: Log very active users](./irc_active_users.md)
+  - [Sensitive messages](./irc_sensitive_messages.md)
+
+---
+
 - [Resources](./resources.md)
