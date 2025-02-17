@@ -16,7 +16,7 @@ repos:
     types: [json]
 
 - repo: https://github.com/igorshubovych/markdownlint-cli
-  rev: v0.43.0
+  rev: v0.44.0
   hooks:
   # - id: markdownlint
   - id: markdownlint-fix
@@ -28,12 +28,12 @@ repos:
     args: [--autofix, --indent, '2']
 
 - repo: https://github.com/crate-ci/typos
-  rev: v1.29.4
+  rev: v1.29.7
   hooks:
   - id: typos
 
 - repo: https://github.com/streetsidesoftware/cspell-cli
-  rev: v8.17.1
+  rev: v8.17.2
   hooks:
   - id: cspell
     types: [markdown]
@@ -44,7 +44,7 @@ repos:
   - id: actionlint
 
 - repo: https://github.com/pre-commit/mirrors-eslint
-  rev: v9.18.0
+  rev: v9.20.1
   hooks:
   - id: eslint
 
