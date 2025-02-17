@@ -8,6 +8,7 @@ import: []
 words:
 
 - -DSPICYZ
+- PRIVMSG
 - aaccept
 - ababab
 - acked

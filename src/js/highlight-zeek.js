@@ -16,7 +16,11 @@ hljs.registerLanguage('zeek', () => ({
     }, {
       className: 'literal',
       begin: /\d+\/(tcp|udp|icmp)/,
-    }
+    },
+    {
+      className: 'literal',
+      begin: /&[\w_]+/,
+    },
   ],
 }));
 
