@@ -70,7 +70,7 @@ them with the element type.
 
 ```spicy
 type X = unit {
-    # Parse a vector of 4-byte integers less than 1024 until we find a null.
+    # Parse a vector of 8-byte integers less than 1024 until we find a null.
     xs: (uint64 &requires=$$<1024)[] &until=$$==0;
 };
 ```
