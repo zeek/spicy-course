@@ -53,22 +53,22 @@
            return cache[n];
 
        # Value was not in the cache. Compute its value and store it.
-       local result = 0;
+       local r = 0;
 
        if (n < 2)
-           result = n;
+           r = n;
 
        else
            # Here we want an `else` branch for sure. We need to pass the cache
            # down to other invocations. Since the passing happens by reference all
            # invocations share a cache.
-           result = fib(n - 1, cache) + fib(n - 2, cache);
+           r = fib(n - 1, cache) + fib(n - 2, cache);
 
-       # Persist result in cache.
-       cache[n] = result;
+       # Persist r in cache.
+       cache[n] = r;
 
-       # Return the result.
-       return result;
+       # Return the r.
+       return r;
    }
    ```
 
