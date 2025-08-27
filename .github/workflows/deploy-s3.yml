@@ -30,6 +30,8 @@ jobs:
     - build
     steps:
     - uses: actions/download-artifact@v5
+      with:
+        path: spicy-course
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v4
       with:
