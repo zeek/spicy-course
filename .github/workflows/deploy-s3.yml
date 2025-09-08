@@ -33,7 +33,7 @@ jobs:
       with:
         path: spicy-course
     - name: Configure AWS Credentials
-      uses: aws-actions/configure-aws-credentials@v4
+      uses: aws-actions/configure-aws-credentials@v5
       with:
         aws-access-key-id: ${{ secrets.STATIC_ZEEK_ORG_AWS_ACCESS_KEY }}
         aws-secret-access-key: ${{ secrets.STATIC_ZEEK_ORG_AWS_SECRET_ACCESS_KEY }}
