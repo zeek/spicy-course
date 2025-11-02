@@ -1,7 +1,7 @@
 name: Check
 
 on:
-  workflow_call: # This is a resusable workflow intended to be called by other jobs.
+  workflow_call: # This is a reusable workflow intended to be called by other jobs.
   pull_request:
 
 jobs:

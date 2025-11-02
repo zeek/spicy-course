@@ -28,23 +28,23 @@ repos:
     args: [--autofix, --indent, '2']
 
 - repo: https://github.com/crate-ci/typos
-  rev: v1.36.2
+  rev: v1.39.0
   hooks:
   - id: typos
 
 - repo: https://github.com/streetsidesoftware/cspell-cli
-  rev: v9.2.0
+  rev: v9.2.1
   hooks:
   - id: cspell
     types: [markdown]
 
 - repo: https://github.com/rhysd/actionlint
-  rev: v1.7.7
+  rev: v1.7.8
   hooks:
   - id: actionlint
 
 - repo: https://github.com/pre-commit/mirrors-eslint
-  rev: v9.35.0
+  rev: v9.39.0
   hooks:
   - id: eslint
 
