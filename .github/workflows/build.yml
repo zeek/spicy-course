@@ -22,7 +22,7 @@ jobs:
           mdbook-mermaid@0.16.0
     - name: Build with mdBook
       run: mdbook build
-    - uses: actions/upload-artifact@v5
+    - uses: actions/upload-artifact@v6
       with:
         name: spicy-course
         path: ./book
