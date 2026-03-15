@@ -1,7 +1,7 @@
 # Prerequisites
 
-To follow this course, installing recent versions of Zeek and Spicy  is required
-(at least zeek-6.0 and spicy-1.8). The [Zeek
+To follow this course, installing recent versions of Zeek and Spicy is required
+(at least zeek-8.0 and spicy-1.14). The [Zeek
 documentation](https://docs.zeek.org/en/master/install.html) shows the different
 ways Zeek can be installed.
 
