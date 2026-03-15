@@ -44,7 +44,7 @@ repos:
   - id: actionlint
 
 - repo: https://github.com/pre-commit/mirrors-eslint
-  rev: d09b8953f3368a18328a6a99a847c4cf903dcd92  # frozen: v10.0.2
+  rev: a01e9af1e41f2a616fdd8f217b6859ae333f1da9  # frozen: v10.0.3
   hooks:
   - id: eslint
 
