@@ -1,5 +1,14 @@
 # Exercise: Input not matching parser grammar
 
+```admonish danger
+This exercises stopped working with zeek-8.0.0 due to [changes to how Zeek logs
+analyzer
+failures](https://github.com/zeek/zeek/releases/tag/v8.0.0#:~:text=Logging%20of,loaded),
+but going trying this exercise with the `zeek/zeek:7.2` container image should
+still be instructive. Updating this exercise to newer Zeek versions is tracked
+in [#36](https://github.com/zeek/spicy-course/issues/36).
+```
+
 The PCAP [`tftp-unsupported.pcap`](data/tftp-unsupported.pcap) contains TFTP
 traffic, but there are problems. Using just the logs produced by Zeek figure
 out what is the issue.
