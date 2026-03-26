@@ -31,13 +31,3 @@ assert s == "foo";
 barify(s);
 assert s == "foo bar";
 ```
-
-```admonish warning
-While this should work for user-defined types, this still is broken for some
-builtin types, e.g., it [works for passing `string`
-values](https://github.com/zeek/spicy/issues/674), but is [broken for
-integers](https://github.com/zeek/spicy/issues/1583).
-
-If support is broken, you need to return a modified copy (use a `tuple` if you
-already return a value).
-```
