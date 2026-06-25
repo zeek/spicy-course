@@ -16,7 +16,7 @@ repos:
     types: [json]
 
 - repo: https://github.com/igorshubovych/markdownlint-cli
-  rev: e72a3ca1632f0b11a07d171449fe447a7ff6795e  # frozen: v0.48.0
+  rev: a4d5d37e66ebcd6b3705204a1d6dbb56dea66338  # frozen: v0.49.0
   hooks:
   # - id: markdownlint
   - id: markdownlint-fix
@@ -28,23 +28,23 @@ repos:
     args: [--autofix, --indent, '2']
 
 - repo: https://github.com/crate-ci/typos
-  rev: 631208b7aac2daa8b707f55e7331f9112b0e062d  # frozen: v1.44.0
+  rev: 37bb98842b0d8c4ffebdb75301a13db0267cef89  # frozen: typos-dict-v0.13.30
   hooks:
   - id: typos
 
 - repo: https://github.com/streetsidesoftware/cspell-cli
-  rev: a42085ade523f591dca134379a595e7859986445  # frozen: v9.7.0
+  rev: ea11f9efc0bec520073405bc30552da887ba71bc  # frozen: v10.0.1
   hooks:
   - id: cspell
     types: [markdown]
 
 - repo: https://github.com/rhysd/actionlint
-  rev: 393031adb9afb225ee52ae2ccd7a5af5525e03e8  # frozen: v1.7.11
+  rev: 914e7df21a07ef503a81201c76d2b11c789d3fca  # frozen: v1.7.12
   hooks:
   - id: actionlint
 
 - repo: https://github.com/pre-commit/mirrors-eslint
-  rev: a01e9af1e41f2a616fdd8f217b6859ae333f1da9  # frozen: v10.0.3
+  rev: 97a8e4af05a8fa8a0ed79d2fbd1f4c86bf1a0178  # frozen: v10.5.0
   hooks:
   - id: eslint
 
